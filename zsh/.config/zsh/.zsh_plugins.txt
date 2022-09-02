@@ -1,0 +1,38 @@
+# Bundles from the default repo (ohmyzsh).
+
+ohmyzsh/ohmyzsh folder:plugins/git
+ohmyzsh/ohmyzsh folder:plugins/github
+ohmyzsh/ohmyzsh folder:plugins/heroku
+ohmyzsh/ohmyzsh folder:plugins/lein
+ohmyzsh/ohmyzsh folder:plugins/command-not-found
+# ohmyzsh/ohmyzsh folder:plugins/common-aliases
+ohmyzsh/ohmyzsh folder:plugins/autojump
+ohmyzsh/ohmyzsh folder:plugins/compleat
+ohmyzsh/ohmyzsh folder:plugins/brew
+ohmyzsh/ohmyzsh folder:plugins/ssh-agent
+
+# Node Plugins
+ohmyzsh/ohmyzsh folder:plugins/node
+
+# Python Plugins
+# ohmyzsh/ohmyzsh folder:plugins/pip
+# ohmyzsh/ohmyzsh folder:plugins/python
+# ohmyzsh/ohmyzsh folder:plugins/virtualenv
+
+#iTerm2
+ohmyzsh/ohmyzsh folder:plugins/iterm2
+
+#antigen bundle tmux
+
+# zsh-users
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+
+# https://github.com/StackExchange/blackbox
+# StackExchange/blackbox
+
+# Load the theme 
+romkatv/powerlevel10k
+
+#smallhadroncollider/antigen-git-rebase

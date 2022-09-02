@@ -1,0 +1,18 @@
+[http "https://gopkg.in"]
+    followRedirects = true
+
+[pull]
+    rebase = false
+
+[user]
+    email = ainharan.subramaniam@growsuper.com
+    name = Ainharan Subramaniam
+
+[alias]
+    conflicts = diff --name-only --diff-filter=U
+    untracked = ls-files --others --exclude-standard
+    logs  = log --graph --abbrev-commit --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --all
+
+[core]
+    editor = nvim
+    pager = less -FRX

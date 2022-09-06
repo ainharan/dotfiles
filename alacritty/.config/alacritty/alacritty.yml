@@ -31,7 +31,7 @@ colors:
 # Font configuration
 font:
   normal:
-    family: Source Code Pro
+    family: SauceCodePro Nerd Font Mono
     # family: Hack
 
     # The `style` can be specified to pick a specific face.

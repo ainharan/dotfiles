@@ -24,3 +24,4 @@ set.cursorline = true
 set.fileencoding = 'utf-8'
 set.termguicolors = true
 set.hidden = true
+set.modifiable = true

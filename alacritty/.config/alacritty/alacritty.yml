@@ -114,6 +114,8 @@ draw_bold_text_with_bright_colors: true
 
 window:
   decorations: None
+  padding.y: 15
+  padding.x: 15
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.

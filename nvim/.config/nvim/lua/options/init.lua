@@ -18,6 +18,7 @@ set.splitright = true
 set.wrap = false
 set.scrolloff = 5
 set.relativenumber = true
+set.number = true
 set.cursorline = true
 
 -- misc

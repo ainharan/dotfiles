@@ -24,14 +24,14 @@ func! DBExe(...)
 endfunction
 " stored locally a credentials file which the function use
 " down below is just an example to the format
-let g:dbs = {
-\  'test postgres': 'postgresql://postgres:12345@localhost/postgres'
-\ }
+" let g:dbs = {
+" \  'test postgres': 'postgresql://postgres:12345@localhost/postgres'
+" \ }
 
 let g:db_ui_table_helpers = {
 \   'postgresql': {
 \     'List': 'select * from "{table}" order by id asc',
-\     'Test': 'select * from "{table}" order by id asc'
+\     'Last100': 'select * from "{table}" order by id desc limit 100'
 \   }
 \ }
 

@@ -4,9 +4,17 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons' -- enable icons
   	use 'kyazdani42/nvim-tree.lua' -- file explorer
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+    use 'williamboman/nvim-lsp-installer' -- lsp language installer
+
+    -- treesitter & treesitter modules/plugins
+    use ({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }) -- treesitter
+	use 'nvim-treesitter/nvim-treesitter-textobjects' -- textobjects
+	use 'nvim-treesitter/nvim-treesitter-refactor'
+
+    -- sql
     use 'tpope/vim-dadbod' -- vim db client
-    use 'tpope/dotenv' -- vim db environments
+    use 'tpope/vim-dotenv' -- vim db environments
     use 'kristijanhusak/vim-dadbod-completion' -- vim db client sql completion
     use 'kristijanhusak/vim-dadbod-ui' -- vim db client ui
-    use 'kywind3000/vim-quickui' -- vim ui menu 
+--    use 'kywind3000/vim-quickui' -- vim ui menu
 end)

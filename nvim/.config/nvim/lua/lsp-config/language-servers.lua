@@ -1,3 +1,4 @@
+local lsp_installer = require("nvim-lsp-installer")
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -44,7 +45,7 @@ local lsp_flags = {
 --     on_attach = on_attach,
 --     flags = lsp_flags,
 -- }
-require('lspconfig')['kotlin-language-server'].setup{
+require('lspconfig')['kotlin_language_server'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
     -- Server-specific settings...

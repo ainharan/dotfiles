@@ -22,7 +22,17 @@ alias vim="nvim"
 alias view="nvim -R"
 alias vimdiff="nvim -d"
 
-# source/load nvm
+# zsh auto completion
+autoload -U compinit; compinit
+setopt globdots
+
+# clean up
 export NVM_DIR="$HOME/.config/nvm"
+export AWS_CONFIG_FILE="$HOME/.config/aws/config"
+export AWS_CLI_HISTORY_FILE="$HOME/.config/aws/history"
+export AWS_CREDENTIALS_FILE="$HOME/.config/aws/credentials"
+export AWS_WEB_IDENTITY_TOKEN_FILE="$HOME/.config/aws/token"
+export AWS_SHARED_CREDENTIALS_FILE="$HOME/.config/aws/shared-credentials"
+# source/load nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion

@@ -6,6 +6,13 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
     use 'williamboman/nvim-lsp-installer' -- lsp language installer
 
+    -- telescope - Find, Filter, Preview, Pick. All lua, all the time.
+    use 'nvim-lua/plenary.nvim'
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
     -- treesitter & treesitter modules/plugins
     use ({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }) -- treesitter
 	use 'nvim-treesitter/nvim-treesitter-textobjects' -- textobjects

@@ -16,6 +16,9 @@ source ~/.config/zsh/.zsh_plugins.sh
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
+# load docker on debian vm
+#export DOCKER_HOST=unix:///tmp/docker-on-debian.sock
+
 # aliases
 alias vi="nvim"
 alias vim="nvim"

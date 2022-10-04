@@ -20,8 +20,6 @@ return require('packer').startup(function(use)
 
     -- sql
     use 'tpope/vim-dadbod' -- vim db client
-    use 'tpope/vim-dotenv' -- vim db environments
     use 'kristijanhusak/vim-dadbod-completion' -- vim db client sql completion
     use 'kristijanhusak/vim-dadbod-ui' -- vim db client ui
---    use 'kywind3000/vim-quickui' -- vim ui menu
 end)

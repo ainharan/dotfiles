@@ -26,4 +26,3 @@ set.fileencoding = 'utf-8'
 set.termguicolors = true
 set.hidden = true
 set.modifiable = true
-set.previewheight = 25

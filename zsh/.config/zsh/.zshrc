@@ -17,13 +17,14 @@ source ~/.config/zsh/.zsh_plugins.sh
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # load docker on debian vm
-#export DOCKER_HOST=unix:///tmp/docker-on-debian.sock
+export DOCKER_HOST=unix:///tmp/docker-on-debian.sock
 
 # aliases
 alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
 alias vimdiff="nvim -d"
+alias idea="/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea"
 
 # zsh auto completion
 autoload -U compinit; compinit

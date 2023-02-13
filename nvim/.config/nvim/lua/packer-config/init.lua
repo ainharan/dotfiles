@@ -23,4 +23,7 @@ return require('packer').startup(function(use)
     use 'tpope/vim-dadbod' -- vim db client
     use 'kristijanhusak/vim-dadbod-completion' -- vim db client sql completion
     use 'kristijanhusak/vim-dadbod-ui' -- vim db client ui
+
+    -- IAC and Config Mgmt Plugins
+    use 'hashivim/vim-terraform'
 end)

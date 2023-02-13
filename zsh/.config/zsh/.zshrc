@@ -16,11 +16,6 @@ source ~/.config/zsh/.zsh_plugins.sh
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
-# load docker on debian vm
-#export DOCKER_HOST=unix:///tmp/docker-on-debian.sock
-# load docker on ec2
-export DOCKER_HOST=unix:///tmp/docker-on-ec2.sock
-
 # aliases
 alias vi="nvim"
 alias vim="nvim"
@@ -32,6 +27,9 @@ alias idea="/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea"
 autoload -U compinit; compinit
 setopt globdots
 
+# terraform auto complete
+complete -o nospace -C "$(which terraform)" terraform
+
 # clean up
 export NVM_DIR="$HOME/.config/nvm"
 export AWS_CONFIG_FILE="$HOME/.config/aws/config"
@@ -40,5 +38,5 @@ export AWS_CREDENTIALS_FILE="$HOME/.config/aws/credentials"
 export AWS_WEB_IDENTITY_TOKEN_FILE="$HOME/.config/aws/token"
 export AWS_SHARED_CREDENTIALS_FILE="$HOME/.config/aws/shared-credentials"
 # source/load nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
